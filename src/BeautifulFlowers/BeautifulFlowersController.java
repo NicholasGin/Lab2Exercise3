@@ -1,7 +1,6 @@
 package BeautifulFlowers;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -26,14 +25,14 @@ public class BeautifulFlowersController implements Initializable {
     @FXML
     private RadioButton cherryBlossomRadioButton;
 
-    public Image roseIMG;
-    public Image bleedingHeartIMG;
-    public Image callaLilyIMG;
-    public Image cherryBlossomIMG;
-    public Image cannaIMG;
+    private Image roseIMG;
+    private Image bleedingHeartIMG;
+    private Image callaLilyIMG;
+    private Image cherryBlossomIMG;
+    private Image cannaIMG;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-
+        // initialize images
         try {
             roseIMG = new Image(new FileInputStream("C:\\SE2203\\Exercise3\\src\\BeautifulFlowers\\Rose.gif"));
             bleedingHeartIMG = new Image(new FileInputStream("C:\\SE2203\\Exercise3\\src\\BeautifulFlowers\\Bleeding Heart.gif"));
@@ -102,5 +101,5 @@ public class BeautifulFlowersController implements Initializable {
                     "produce edible cherries.");
         }
     }
-    // Repeat and modify the above handler for the rest of the other flowers.
+
 }
