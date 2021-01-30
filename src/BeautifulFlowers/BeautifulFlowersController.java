@@ -10,6 +10,8 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 public class BeautifulFlowersController implements Initializable {
+
+    // define variables
     @FXML
     private ImageView flowersImageView;
     @FXML
